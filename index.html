@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>শুভ বার্ষিকী 💌</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&family=Tiro+Bangla:ital@0;1&display=swap">
+<style>
+:root{--bg:#0a0920;--vio:#2a1b5c;--rose:#ff8fab;--gold:#ffd9a0;--mist:#e8defa;--dim:#a99bc9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--mist);font:400 18px/1.85 "Hind Siliguri",system-ui,sans-serif;overflow-x:hidden}
+.serif{font-family:"Tiro Bangla",Georgia,serif;font-weight:400}
+#sky{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+.glow{position:fixed;z-index:0;width:70vmax;height:70vmax;border-radius:50%;filter:blur(90px);opacity:.38;pointer-events:none}
+.g1{background:#6a3ad6;top:-35vmax;left:-25vmax;animation:dr 22s ease-in-out infinite alternate}
+.g2{background:#d94d86;bottom:-40vmax;right:-30vmax;animation:dr 26s ease-in-out infinite alternate-reverse}
+@keyframes dr{to{transform:translate(8vmax,6vmax)}}
+.screen{position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 20px;text-align:center;transition:opacity .8s}
+.hide{display:none}.fade{opacity:0;pointer-events:none}
+h1{font-size:clamp(30px,8vw,54px);line-height:1.35;margin:0 0 44px;color:var(--gold);text-shadow:0 0 30px #ffd9a055}
+.hero{font-size:clamp(40px,12vw,84px);margin:0 0 4px;animation:in 1.6s cubic-bezier(.2,.8,.2,1) both}
+.jaan{font-size:clamp(46px,14vw,96px);line-height:1.2;color:var(--rose);text-shadow:0 0 44px #ff8fabaa;margin-bottom:36px;animation:in 1.6s .5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes in{from{opacity:0;transform:scale(.92) translateY(14px);filter:blur(8px)}}
+.mus{all:unset;cursor:pointer;position:fixed;z-index:10;top:calc(14px + env(safe-area-inset-top,0px));right:14px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:var(--gold);background:#ffffff14;border:1px solid #ffd9a040;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.mus:focus-visible{outline:2px solid var(--gold)}
+/* envelope */
+.stage{perspective:900px}
+.env{all:unset;cursor:pointer;position:relative;display:block;width:min(320px,82vw);aspect-ratio:3/2;filter:drop-shadow(0 24px 40px #000a);transition:transform .4s}
+.env:hover{transform:translateY(-5px) rotate(-1.2deg)}
+.env:focus-visible{outline:3px solid var(--gold);outline-offset:8px;border-radius:8px}
+.env>*{position:absolute;left:0;right:0}
+.bk{inset:0;background:#241446;border-radius:8px}
+.pp{top:6%;height:88%;background:linear-gradient(#fff6ec,#f3dfcf);border-radius:6px;z-index:2;transition:transform .9s .35s cubic-bezier(.3,.8,.3,1)}
+.ft{inset:0;z-index:3;border-radius:8px;background:linear-gradient(135deg,transparent 49.6%,#35205f 50%) left/50.2% 100% no-repeat,linear-gradient(225deg,transparent 49.6%,#35205f 50%) right/50.2% 100% no-repeat,linear-gradient(#3d2569,#3d2569) bottom/100% 45% no-repeat}
+.fl{top:0;height:62%;background:#4a2d7d;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;z-index:4;transition:transform .6s}
+.sl{left:50%;top:47%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;z-index:5;background:radial-gradient(circle at 35% 30%,#ffb3c4,#d63d68);display:grid;place-items:center;font-size:24px;color:#ffe9ee;box-shadow:0 4px 18px #ff8fab88;animation:bt 1.7s infinite;transition:opacity .3s;left:calc(50% - 27px);right:auto;transform:none}
+@keyframes bt{50%{transform:scale(1.14)}}
+.env.open .fl{transform:rotateX(180deg);z-index:1}
+.env.open .sl{opacity:0;animation:none}
+.env.open .pp{transform:translateY(-52%)}
+/* letter */
+.card{max-width:580px;width:100%;text-align:left;padding:34px 28px;border-radius:26px;background:linear-gradient(160deg,#ffffff14,#ffffff06);border:1px solid #ffd9a038;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 30px 80px #0008,inset 0 1px 0 #ffffff22}
+.card h2{font-size:clamp(28px,7vw,42px);line-height:1.35;margin:0 0 22px;color:var(--gold)}
+.card p{margin:0 0 16px;min-height:1.85em}
+.cur::after{content:"▍";color:var(--rose);animation:bl 1s infinite}
+@keyframes bl{50%{opacity:0}}
+.lead{color:var(--gold);margin:28px 0 12px!important}
+.rs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rs button{all:unset;cursor:pointer;min-height:96px;padding:14px;border-radius:18px;border:1px solid #ffd9a040;background:#ffffff0b;color:var(--dim);display:flex;align-items:center;justify-content:center;text-align:center;font-size:15.5px;line-height:1.5;transition:.35s}
+.rs button:hover{border-color:var(--gold)}
+.rs button:focus-visible{outline:3px solid var(--gold)}
+.rs button.on{background:linear-gradient(160deg,#ff8fab26,#ffd9a018);border-color:var(--rose);color:var(--mist);box-shadow:0 0 28px #ff8fab33;animation:pop .5s}
+@keyframes pop{40%{transform:scale(1.05)}}
+.star{font-size:30px;color:var(--gold);text-shadow:0 0 14px var(--gold)}
+.cta{all:unset;cursor:pointer;display:block;margin:28px auto 0;padding:15px 32px;border-radius:99px;background:linear-gradient(90deg,#ff8fab,#ffd0a0);color:#3a0f24;font-weight:500;box-shadow:0 8px 30px #ff8fab55;animation:bt 2s infinite}
+.cta:focus-visible{outline:3px solid #fff;outline-offset:3px}
+/* finale */
+#fin{position:fixed;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:24px 24px calc(7vh + env(safe-area-inset-bottom,0px));text-align:center;opacity:0;pointer-events:none;transition:opacity 1s 2s}
+#fin.show{opacity:1;pointer-events:auto}
+#fin .big{font-size:clamp(34px,10vw,70px);line-height:1.25;color:var(--rose);text-shadow:0 0 40px #ff8fabaa}
+#fin .sub{max-width:440px;margin:8px 0 0}
+.x{all:unset;cursor:pointer;margin-top:18px;color:var(--dim);text-decoration:underline;font-size:15px}
+.x:focus-visible{outline:2px solid var(--gold)}
+.h{position:fixed;bottom:-40px;z-index:6;pointer-events:none;animation:up linear forwards}
+@keyframes up{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+@media (prefers-reduced-motion:reduce){.sl,.cta,.cur::after,.g1,.g2{animation:none}.h{display:none}.pp,.fl{transition:none}}
+</style>
+</head>
+<body>
+<canvas id="sky"></canvas><button id="mus" class="mus hide" aria-label="গান চালু বা বন্ধ করো">♪</button><div class="glow g1"></div><div class="glow g2"></div>
+
+<section class="screen" id="s1">
+  <h1 class="serif hero">Happy Anniversary</h1>
+  <div class="jaan serif">জান ♥</div>
+  <button class="cta" id="open">কিছু কথা</button>
+</section>
+
+<section class="screen hide fade" id="s2">
+  <div class="card">
+    <h2 class="serif" id="hd"></h2>
+    <div id="msg"></div>
+    <div id="rw" class="hide"><p class="lead">কেন তোমাকে ভালোবাসি, ট্যাপ করে দেখো</p><div class="rs" id="rs"></div></div>
+    <button class="cta hide" id="go">শেষ একটা কথা…</button>
+  </div>
+</section>
+
+<div id="fin" role="dialog" aria-label="শেষ কথা">
+  <div class="big serif">ভালোবাসি, <span id="n2"></span></div>
+  <p class="sub" id="last"></p>
+  <button class="x" id="close">আবার পড়ব</button>
+</div>
+
+<script>
+// ===== এখানে নিজের কথা বসাও =====
+var HER = "সোনা";
+var LINES = [
+  "আজ আমাদের বিশেষ দিন। তুমি আমার জীবনে আসার পর থেকে সবকিছু একটু বেশি সুন্দর, একটু বেশি নিজের মনে হয়।",
+  "খারাপ দিনেও তুমি পাশে থাকলে সব সহজ হয়ে যায়। এই জন্য আমি সবসময় তোমার কাছে কৃতজ্ঞ।",
+  "বেশি কিছু লিখলাম না, শুধু জানাতে এসেছি, তুমি আমার সবচেয়ে প্রিয় মানুষ।",
+  "জান আজকে আগে ফুল দেয়ার অন্য কারণ ছিল আমি এখন হুটহাট কাজে আটকিয়ে যাই, এর ফলে যাতে তোমাকে অন্তত লেট wish না করা হয়।",
+  "অনেক ভালোবাসি জান ♥ "
+];
+var REASONS = [
+  "তোমার হাসি দেখলে সব ক্লান্তি চলে যায়",
+  "তুমি আমাকে যেমন আছি তেমনই মেনে নিয়েছ",
+  "তোমার সাথে চুপ করে বসে থাকাটাও ভালো লাগে",
+  "তোমাকে দেখলেই ভালো লাগে জান" 
+];
+var LAST = "আল্লাহ আমাদের আরও অনেক অনেক অনেক বছর একসাথে রাখুক । আমিন!";
+// ================================
+var $=function(i){return document.getElementById(i)};
+var calm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+$("n2").textContent=HER+" ♥";$("last").textContent=LAST;
+setTimeout(function(){hearts(30)},400);
+
+/* music: original soft music-box tune made in the browser */
+var AC,MG,tm,stp=0,on=false;
+var CH=[[261.63,329.63,392,523.25],[246.94,293.66,392,493.88],[220,261.63,329.63,440],[174.61,261.63,349.23,440]];
+var AR=[0,1,2,3,2,1,2,3];
+var ML=[[659.25,0,0,587.33,0,523.25,0,0],[587.33,0,0,493.88,0,587.33,0,0],[523.25,0,659.25,0,783.99,0,659.25,0],[698.46,0,0,659.25,0,587.33,0,523.25]];
+function note(f,v,d){
+  var o=AC.createOscillator(),g=AC.createGain(),t=AC.currentTime;
+  o.type="triangle";o.frequency.value=f;
+  g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(v,t+.015);g.gain.exponentialRampToValueAtTime(0.0001,t+d);
+  o.connect(g);g.connect(MG);o.start(t);o.stop(t+d+.05)
+}
+function tick(){
+  var b=Math.floor(stp/8)%4,s=stp%8;
+  note(CH[b][AR[s]],.32,1.4);
+  if(ML[b][s])note(ML[b][s],.5,2);
+  if(s===0)note(CH[b][0]/2,.35,2.4);
+  stp++
+}
+function startMusic(){
+  try{
+    var AX=window.AudioContext||window.webkitAudioContext;if(!AX)return;
+    AC=new AX();MG=AC.createGain();MG.gain.value=.3;
+    var dl=AC.createDelay(),fb=AC.createGain();dl.delayTime.value=.32;fb.gain.value=.32;
+    MG.connect(AC.destination);MG.connect(dl);dl.connect(fb);fb.connect(dl);dl.connect(AC.destination);
+    on=true;tick();tm=setInterval(tick,420);
+    $("mus").classList.remove("hide")
+  }catch(e){}
+}
+$("mus").onclick=function(){
+  if(!AC)return;
+  if(on){AC.suspend();on=false;this.textContent="🔇"}else{AC.resume();on=true;this.textContent="♪"}
+};
+/* music v2: warmer piano, pad, bass and reverb (same names override the first version) */
+var BR=[{b:130.81,n:[261.63,329.63,392]},{b:98,n:[246.94,293.66,392]},{b:110,n:[220,261.63,329.63]},{b:82.41,n:[246.94,329.63,392]},{b:87.31,n:[261.63,349.23,440]},{b:130.81,n:[261.63,329.63,392]},{b:73.42,n:[293.66,349.23,440]},{b:98,n:[246.94,293.66,392]}];
+var AR2=[0,1,2,1,2,1,2,1];
+var ML2=[[783.99,0,659.25,0,783.99,0,880,0],[783.99,0,0,587.33,0,659.25,0,587.33],[659.25,0,523.25,0,659.25,0,783.99,0],[659.25,0,0,587.33,0,493.88,0,0],[698.46,0,880,0,698.46,0,783.99,0],[659.25,0,0,523.25,0,659.25,0,783.99],[698.46,0,587.33,0,698.46,0,880,0],[783.99,0,0,659.25,0,587.33,0,0]];
+function nt(f,v,d){
+  var t=AC.currentTime,g=AC.createGain(),fl=AC.createBiquadFilter(),o=AC.createOscillator(),o2=AC.createOscillator(),g2=AC.createGain();
+  fl.type="lowpass";fl.frequency.setValueAtTime(3200,t);fl.frequency.exponentialRampToValueAtTime(900,t+d);
+  o.type="sine";o.frequency.value=f;o2.type="triangle";o2.frequency.value=f*2;g2.gain.value=.18;
+  g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(v,t+.012);g.gain.exponentialRampToValueAtTime(.0001,t+d);
+  o.connect(g);o2.connect(g2);g2.connect(g);g.connect(fl);fl.connect(MG);
+  o.start(t);o2.start(t);o.stop(t+d+.05);o2.stop(t+d+.05)
+}
+function pad(f,d){
+  var t=AC.currentTime,o=AC.createOscillator(),g=AC.createGain();
+  o.type="sine";o.frequency.value=f;
+  g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(.05,t+1);g.gain.linearRampToValueAtTime(.0001,t+d);
+  o.connect(g);g.connect(MG);o.start(t);o.stop(t+d+.1)
+}
+function tick(){
+  var b=Math.floor(stp/8)%8,s=stp%8,c=BR[b];
+  nt(c.n[AR2[s]],.26,2);
+  if(s===0){nt(c.b,.34,3);c.n.forEach(function(f){pad(f,4.6)})}
+  if(ML2[b][s])nt(ML2[b][s],.42,2.6);
+  stp++
+}
+function startMusic(){
+  try{
+    var AX=window.AudioContext||window.webkitAudioContext;if(!AX)return;
+    AC=new AX();MG=AC.createGain();MG.gain.value=.3;
+    var cp=AC.createDynamicsCompressor();MG.connect(cp);cp.connect(AC.destination);
+    var rv=AC.createConvolver(),len=Math.floor(AC.sampleRate*2.6),bf=AC.createBuffer(2,len,AC.sampleRate);
+    for(var ch=0;ch<2;ch++){var dd=bf.getChannelData(ch);for(var i=0;i<len;i++)dd[i]=(Math.random()*2-1)*Math.pow(1-i/len,2.6)}
+    rv.buffer=bf;var wg=AC.createGain();wg.gain.value=.45;MG.connect(rv);rv.connect(wg);wg.connect(cp);
+    on=true;tick();tm=setInterval(tick,480);
+    $("mus").classList.remove("hide")
+  }catch(e){}
+}
+/* sky + constellation heart */
+var cv=$("sky"),cx=cv.getContext("2d"),W,H,D=Math.min(devicePixelRatio||1,2),mode=0,ss=null,P=[];
+function size(){W=innerWidth;H=innerHeight;cv.width=W*D;cv.height=H*D;cx.setTransform(D,0,0,D,0,0)}
+addEventListener("resize",size);size();
+var S=[];for(var i=0;i<130;i++)S.push({x:Math.random(),y:Math.random(),r:Math.random()*1.4+.3,p:Math.random()*6.3,s:.6+Math.random()*1.6});
+function hp(t){return[16*Math.pow(Math.sin(t),3),-(13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t))]}
+function makeHeart(){
+  P=[];for(var i=0;i<420;i++){
+    var o=i<260,t=o?i/260*6.2832:Math.random()*6.2832;
+    P.push({x:Math.random()*W,y:Math.random()*H,t:t,k:o?1:Math.sqrt(Math.random())*.92,d:Math.random(),r:o?1.5+Math.random()*1.6:.8+Math.random()*1.2,o:o,g:Math.random()<.35})
+  }
+}
+function frame(ms){
+  cx.clearRect(0,0,W,H);cx.shadowBlur=0;
+  S.forEach(function(s){
+    var a=.35+.65*Math.abs(Math.sin(ms/1000*s.s+s.p));
+    cx.globalAlpha=calm?.7:a;cx.fillStyle="#fff";cx.beginPath();cx.arc(s.x*W,s.y*H,s.r,0,6.3);cx.fill()
+  });
+  if(!calm&&!ss&&Math.random()<.004)ss={x:Math.random()*W,y:Math.random()*H*.35,vx:-7-Math.random()*4,vy:3+Math.random()*2,l:1};
+  if(ss){cx.globalAlpha=ss.l;cx.strokeStyle="#ffe9c9";cx.lineWidth=1.6;cx.beginPath();cx.moveTo(ss.x,ss.y);cx.lineTo(ss.x-ss.vx*7,ss.y-ss.vy*7);cx.stroke();ss.x+=ss.vx;ss.y+=ss.vy;ss.l-=.013;if(ss.l<=0)ss=null}
+  if(mode){
+    var sc=Math.min(W,H*1.1)*.021*(1+.03*Math.sin(ms/260)),cx0=W/2,cy0=H*.36;
+    cx.shadowColor="#ff8fab";cx.shadowBlur=10;
+    P.forEach(function(p,i){
+      var h=hp(p.t),tx=cx0+h[0]*sc*p.k,ty=cy0+(h[1]+2.5)*sc*p.k,e=calm?1:.035+p.d*.03;
+      p.x+=(tx-p.x)*e;p.y+=(ty-p.y)*e;
+      var tw=calm?1:.6+.4*Math.sin(ms/300+i);
+      cx.globalAlpha=tw;cx.fillStyle=p.g?"#ffd9a0":"#ff8fab";cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.3);cx.fill()
+    });
+    cx.shadowBlur=0;cx.globalAlpha=.13;cx.strokeStyle="#ffd9a0";cx.lineWidth=.7;cx.beginPath();
+    for(var i=0;i<260;i+=2){var a=P[i],b=P[(i+9)%260];cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y)}cx.stroke()
+  }
+  requestAnimationFrame(frame)
+}
+requestAnimationFrame(frame);
+
+function hearts(n){
+  if(calm)return;
+  for(var i=0;i<n;i++){
+    var s=document.createElement("span");s.className="h";s.textContent=["♥","✦","💗","✨"][i%4];
+    s.style.left=Math.random()*100+"vw";s.style.fontSize=(16+Math.random()*24)+"px";
+    s.style.color=["#ff8fab","#ffd9a0","#ff6f91"][i%3];
+    s.style.animationDuration=(4+Math.random()*4)+"s";s.style.animationDelay=Math.random()*1.2+"s";
+    document.body.appendChild(s);setTimeout(function(e){e.remove()},10000,s)
+  }
+}
+function type(el,tx,done){
+  if(calm){el.textContent=tx;done&&done();return}
+  var i=0;el.classList.add("cur");
+  (function t(){el.textContent=tx.slice(0,++i);if(i<tx.length)setTimeout(t,30);else{el.classList.remove("cur");done&&done()}})()
+}
+
+$("open").onclick=function(){
+  if(this.dataset.d)return;this.dataset.d=1;startMusic();
+  setTimeout(function(){
+    $("s1").classList.add("fade");
+    setTimeout(function(){
+      $("s1").classList.add("hide");$("s2").classList.remove("hide");
+      requestAnimationFrame(function(){$("s2").classList.remove("fade")});
+      $("hd").textContent="শুভ বার্ষিকী, "+HER+" ♥";hearts(18);
+      var box=$("msg"),k=0;
+      (function next(){
+        if(k>=LINES.length){showReasons();return}
+        var p=document.createElement("p");box.appendChild(p);type(p,LINES[k++],function(){setTimeout(next,350)})
+      })()
+    },calm?0:700)
+  },calm?0:50)
+};
+function showReasons(){
+  $("rw").classList.remove("hide");var seen=0;
+  REASONS.forEach(function(r){
+    var b=document.createElement("button");b.innerHTML='<span class="star">✦</span>';
+    b.onclick=function(){
+      if(b.classList.contains("on"))return;
+      b.classList.add("on");b.textContent=r;hearts(5);seen++;
+      if(seen===REASONS.length)$("go").classList.remove("hide")
+    };
+    $("rs").appendChild(b)
+  })
+}
+$("go").onclick=function(){
+  $("s2").classList.add("fade");makeHeart();mode=1;
+  $("fin").classList.add("show");hearts(40)
+};
+$("close").onclick=function(){
+  $("fin").classList.remove("show");mode=0;$("s2").classList.remove("fade")
+};
+</script>
+</body>
+</html>
